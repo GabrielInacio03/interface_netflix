@@ -1,0 +1,128 @@
+/*Importações*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+/*ROOTs*/
+:root{
+    --white: #f7f7f7;
+    --red-dark: #bf0000;
+    --black: #000000;
+    --grey-light: #4d4c4c;
+    --grey-dark: #262525;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 93.75%; /*15px */
+}
+body{    
+    background: var(--grey-dark);
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+a{
+    color: var(--white);
+}
+/*HEADER e NAVBAR*/
+header{
+    height: 100vh;    
+    background: url("../img/capa.jpg") no-repeat;
+    background-position: right;    
+    background-size: cover;
+}
+.navbar{
+    padding-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+.navbar .navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+.navbar .navbar-menu h1{
+    margin-right: 2.5rem;
+    font-size: clamp(.8rem, 3vw, 5rem); 
+    text-transform: uppercase;
+    color: var(--red-dark);    
+}
+.navbar .navbar-menu ul{
+    list-style: none;
+}
+.navbar .navbar-menu ul li{
+    font-size: clamp(.8rem, 2vw, 1rem); 
+    margin-right: .5rem;
+    display: inline-block;
+    color: var(--white);
+}
+.navbar .navbar-menu ul li:hover a{
+    color: var(--grey-light);
+}
+
+.navbar .menu-genero{
+    position: absolute;
+    width: 60%;
+    top: 5rem;
+}
+.navbar .menu-genero h2{    
+    font-size: clamp(.8rem, 2vw, 1.8rem); 
+    color: var(--white);   
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar .menu-genero img{
+    margin-top: 1rem;
+    width: clamp(80%, 90%, 95%);
+}
+.navbar .menu-genero p{
+    margin-top: .8rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: left;
+    color: var(--white);
+}
+.menu-genero-botoes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;    
+}
+.menu-genero-botoes a{
+    width: 40%;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;    
+    text-transform: uppercase;
+    border: none;
+    background: rgba(0,0,0,.5);
+    border-radius: .2rem;
+    padding: .6rem 0;
+    margin-right: .3rem;
+    margin-bottom: .2rem;
+}
+.menu-genero-botoes a:hover{
+    background: var(--white);
+    color: var(--black);
+}
+
+/*MAIN*/
+main{
+   background: rgba(0,0,0,.1);
+   position: relative;
+   top: -5rem;
+}
+.item img{          
+    width: 613px;
+    height: 413px;
+    border-radius: .1rem;
+    cursor: pointer;
+}
